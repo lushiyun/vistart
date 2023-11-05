@@ -23,7 +23,7 @@ Built with type safety, scalability, and developer experience in mind. A batteri
 - [Prettier](https://prettier.io) - An opinionated code formatter
 - [Vite](https://vitejs.dev) - Feature rich and highly optimized frontend tooling with TypeScript support out of the box
 - [React](https://react.dev) - A modern front-end JavaScript library for building user interfaces based on components
-- [shadcn](https://ui.shadcn.com/) + [Radix UI](https://www.radix-ui.com/primitives) + [Tailwind CSS](https://tailwindcss.com) - Ultra flexible and re-usable components for building high-quality, accessible design systems and web apps 
+- [shadcn](https://ui.shadcn.com/) + [Radix UI](https://www.radix-ui.com/primitives) + [Tailwind CSS](https://tailwindcss.com) - Ultra flexible and re-usable components for building high-quality, accessible design systems and web apps
 - [Storybook](https://storybook.js.org) - A frontend workshop for building UI components and pages in isolation
 - [TanStack Router](https://tanstack.com/router/v1) - Fully typesafe, modern and scalable routing for React applications
 - [TanStack Query](https://tanstack.com/query/latest) - Declarative, always-up-to-date auto-managed queries and mutations
@@ -43,29 +43,13 @@ A more detailed list of the included packages can be found in the [Installed Pac
 ## Requirements
 
 - [NodeJS 18+](https://nodejs.org/en)
-- [pnpm](https://pnpm.io) (or equivalent)
+- [pnpm](https://pnpm.io) (or equivalent) - [global installation](https://pnpm.io/installation)
 
 If you'd like to use the included Dockerfile then [Docker](https://www.docker.com) is required as well:
 
 ## Getting Started
 
-Getting started is a simple as cloning the repository
-
-```
-git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git
-```
-
-Changing into the new directory
-
-```
-cd vite-react-boilerplate
-```
-
-Removing the .git folder (and any additional files, folders or dependencies you may not need)
-
-```
-rm -rf .git
-```
+This is a template repository. See Github [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 Installing dependencies
 
@@ -80,16 +64,6 @@ pnpm run setup
 ```
 
 Congrats! You're ready to starting working on that new project!
-
-If you'd rather run the commands above in one go, check out the command below:
-
-```
-git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git &&\
-cd vite-react-boilerplate &&\
-rm -rf .git &&\
-pnpm install &&\
-pnpm run setup
-```
 
 **Note**: This project comes with two git hooks added by [husky](https://typicode.github.io/husky/). A prepare-commit-msg hook to run the [Commitizen](https://github.com/commitizen/cz-cli#readme) cli for those nice commit messages and a commit-msg hook to run [Commitlint](https://commitlint.js.org/#/) on the message itself. Commitlint will ensure the commit message follows the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/) (it will if you used commitizen).
 
