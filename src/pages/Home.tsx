@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "@/common/types";
-import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/button";
 
 const Home = (): FunctionComponent => {
 	return (
